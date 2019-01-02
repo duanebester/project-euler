@@ -27,7 +27,7 @@ class Question8Test extends FunSuite {
         |71636269561882670428252483600823257530420752963450""".stripMargin
 
     val numbers = inputNumberString
-      .filter(c => c != '\n')
+      .filter(_ != '\n')
       .map(_.toString.toInt)
       .toList
 
